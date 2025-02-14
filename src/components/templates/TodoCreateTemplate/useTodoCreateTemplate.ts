@@ -2,13 +2,13 @@ import { useState, useCallback, ChangeEvent } from "react";
 import { useNavigate } from "react-router";
 import { NAVIGATION_PATH } from "../../../constants/navigation";
 
-type TodoCreateTemplateParams = {
+type UseTodoCreateTemplateParams = {
   addTodo: (title: string, content: string) => void;
 };
 
 export const useTodoCreateTemplate = ({
   addTodo,
-}: TodoCreateTemplateParams) => {
+}: UseTodoCreateTemplateParams) => {
   const navigate = useNavigate();
 
   /* local state */
