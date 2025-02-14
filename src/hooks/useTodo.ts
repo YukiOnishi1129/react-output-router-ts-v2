@@ -10,8 +10,6 @@ export const useTodo = () => {
   /* actions */
   /**
    * Todo新規登録処理
-   * @param {*} title
-   * @param {*} content
    */
   const addTodo = useCallback(
     (title: string, content: string) => {
@@ -34,10 +32,6 @@ export const useTodo = () => {
 
   /**
    * Todo更新処理
-   * @param {*} id
-   * @param {*} title
-   * @param {*} content
-   * @type {(function(*, *, *): void)|*}
    */
   const updateTodo = useCallback(
     (id: number, title: string, content: string) => {
@@ -59,8 +53,6 @@ export const useTodo = () => {
 
   /**
    * Todo削除処理
-   * @param { number } targetId
-   * @param { string }targetTitle
    */
   const deleteTodo = useCallback(
     (targetId: number, targetTitle: string) => {

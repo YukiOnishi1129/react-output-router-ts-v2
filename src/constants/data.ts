@@ -1,7 +1,9 @@
+import { TodoType } from "../types/Todo";
+
 /**
  * Todoリストの処置値
  */
-export const INIT_TODO_LIST = [
+export const INIT_TODO_LIST: Array<TodoType> = [
   {
     id: 1,
     title: "Todo1",
