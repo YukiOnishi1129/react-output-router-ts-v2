@@ -1,50 +1,61 @@
-# React + TypeScript + Vite
+# react-output-router-ts-v2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React アウトプットサンプル
 
-Currently, two official plugins are available:
+TypeScript を使用
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+react-router を用いて SPA 構成にしたアプリケーション
 
-## Expanding the ESLint configuration
+状態管理は context api を使用
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+url はこちら
+https://yukionishi1129.github.io/react-output-router-ts-v2
 
-- Configure the top-level `parserOptions` property like this:
+## 目次
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. 環境構築
+2. アプリケーションの仕様
+
+## 1. 環境構築
+
+### 1-1. ライブラリ インストール
+
+```
+npm install
+
+または
+
+yarn
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 1-2. アプリケーション実行
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
 ```
+npm run dev
+
+または
+
+yarn dev
+```
+
+## 2. アプリケーションの仕様
+
+### 2-1. 仕様
+
+- Todo リスト
+  - Todo 一覧表示
+  - Todo 検索処理
+  - Todo 新規登録処理
+  - Todo 詳細表示
+  - Todo 編集処理
+  - Todo 削除処理
+
+### 2-2. 構成技術
+
+- typescript: 5.7.2
+- react: 19.0.0
+- react-dom: 19.0.0
+- react-router: 7.1.5
+- vite: 6.1.0
+- @fortawesome/react-fontawesom: 0.2.2
+- @fortawesome/free-solid-svg-icons: 6.7.2
